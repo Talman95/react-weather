@@ -2,6 +2,7 @@ import { FC } from 'react';
 
 import { CurrentDay } from './components/CurrentDay/CurrentDay';
 import { CurrentDayInfo } from './components/CurrentDayInfo/CurrentDayInfo';
+import { Days } from './components/Days/Days';
 import s from './Home.module.scss';
 
 export const Home: FC = () => {
@@ -11,6 +12,7 @@ export const Home: FC = () => {
         <CurrentDay />
         <CurrentDayInfo />
       </div>
+      <Days />
     </div>
   );
 };
