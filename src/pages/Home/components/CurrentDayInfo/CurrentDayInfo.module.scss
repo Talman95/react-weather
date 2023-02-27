@@ -5,9 +5,10 @@
   max-width: 750px;
   padding: 25px;
   width: 100%;
-  background-color: $light-background;
-  box-shadow: $box-shadow;
+  background-color: var(#{--components-background-default});
+  box-shadow: var(#{--card-shadow-default});
   border-radius: $border-radius;
+  transition: $transition-color;
 
   .cloud_img {
     position: absolute;
@@ -36,9 +37,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: #fff;
+      background-color: var(#{--components-background-default});
       box-shadow: 1px 4px 10px -1px rgba(71, 147, 255, 0.2);
       border-radius: 50%;
+      transition: $transition-color;
     }
 
     .indicator_title,
@@ -51,7 +53,8 @@
     }
 
     .indicator_value {
-      color: $light-color;
+      color: var(#{--text-color-default});
+      transition: $transition-color;
     }
   }
 }

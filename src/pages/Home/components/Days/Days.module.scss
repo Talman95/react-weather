@@ -6,26 +6,29 @@
   flex-wrap: wrap;
   padding: 20px;
   width: 100%;
-  background-color: $light-background;
-  box-shadow: $box-shadow;
+  background-color: var(#{--components-background-default});
+  box-shadow: var(#{--card-shadow-default});
   border-radius: 0 0 $border-radius $border-radius;
   margin-top: 30px;
+  transition: $transition-color;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  background-color: rgba(71, 147, 255, 0.2);
+  background-color: var(#{--card-background-default});
   border-radius: 10px;
   padding: 10px;
   width: 149px;
   transition: 0.3s;
   cursor: pointer;
+  transition: $transition-color;
 
   .day {
     margin-bottom: 7px;
     font-size: 18px;
     color: var(#{--text-color-default});
+    transition: $transition-color;
   }
 
   .date {
@@ -52,7 +55,7 @@
   }
 
   &:hover {
-    box-shadow: 0px 3px 20px rgba(147, 144, 144, 0.28);
+    box-shadow: var(#{--card-shadow-default});
   }
 }
 
@@ -68,14 +71,15 @@
   box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
   border-radius: 5px;
   padding: 9px 20px;
-  background-color: $light-background;
-  color: #333;
+  background-color: var(#{--components-background-default});
+  color: var(#{--text-color-default});
   font-size: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 15px;
   cursor: pointer;
+  transition: $transition-color;
 }
 
 .cancel {

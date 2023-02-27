@@ -4,10 +4,11 @@
   max-width: 400px;
   padding: 20px;
   width: 100%;
-  background-color: $light-background;
-  box-shadow: $box-shadow;
+  background-color: var(#{--components-background-default});
+  box-shadow: var(#{--card-shadow-default});
   border-radius: $border-radius;
   margin-right: 50px;
+  transition: $transition-color;
 
   .top_block {
     width: 100%;
@@ -25,7 +26,8 @@
       .title {
         font-size: 40px;
         font-weight: 500;
-        color: $light-color;
+        color: var(#{--text-color-default});
+        transition: $transition-color;
       }
     }
 
